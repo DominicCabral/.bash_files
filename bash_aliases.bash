@@ -1,5 +1,5 @@
 #list
-alias ll='ls -FGlAhp' 
+alias ll='exa -bghHliS' 
 
 #docker
 alias drac='docker rm $(docker ps -qa)'
