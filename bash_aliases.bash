@@ -2,11 +2,10 @@
 alias ll='exa -bghHliS' 
 
 #docker
-alias drac='docker rm $(docker ps -qa)'
-alias drai='docker rmi $(docker images -q)'
-alias dsac='docker kill $(docker ps -q)'
-alias daui='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
-alias driwp='docker rmi $(docker images | grep $1 | awk "{print \$3}")'
+alias drac='docker rm $(docker ps -qa)'                               # Docker Remove All Containers
+alias drai='docker rmi $(docker images -q)'                           # Docker Remove All Images 
+alias dkac='docker kill $(docker ps -q)'                              # Docker Kill All Containers
+alias drdi='docker rmi $(docker images --filter "dangling=true" -q)'  # Docker Remove Dangling Images
 
 #networking
 alias myip='curl ifconfig.me/ip'                    # myip:         Public facing IP Address
