@@ -1,6 +1,11 @@
 # .bash_files
 *bash profile related files*
 
-Insert `insert_into_bashrc.bash` into your `~/.bashrc` or `~/.bash_profile` to load files
+Download into your home dir (`~/`)
 
-`cat ./bash_files/insert_into_bash.rc >> ~/.bashrc`
+Insert into your `.bash_profile` or `.bashrc`:
+
+```
+BASH_FILES=~/.bash_files
+source $BASH_FILES/load_all_files.bash
+```
