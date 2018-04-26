@@ -1,9 +1,11 @@
 # .bash_files
 *bash profile related files*
 
-Download into your home dir (`~/`)
+> Download repo into your home dir (`~/`)
 
-Insert into your `.bash_profile` or `.bashrc`:
+`git clone https://github.com/DominicCabral/.bash_files.git`
+
+> Insert into your `.bash_profile` or `.bashrc`:
 
 ```
 BASH_FILES=~/.bash_files
